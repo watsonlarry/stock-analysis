@@ -6,11 +6,19 @@ I have a friend named Steve. And while I've already built a button-loaded worksh
 
 ### Results
 
+To speed up the code, I created a three utput arrays to loop through istead of relying on referencing the data sheet itself each time.
 
+Performance speed for original code:
 
-![2017](https://github.com/watsonlarry/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
+![2017](https://github.com/watsonlarry/stock-analysis/blob/main/Resources/Stocks%202017.png)
+![2018](https://github.com/watsonlarry/stock-analysis/blob/main/Resources/Stocks_2018.png)
 
-![2018](https://github.com/watsonlarry/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
+Performance speed for refactored code:
+
+![2017r](https://github.com/watsonlarry/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
+![2018r](https://github.com/watsonlarry/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
+
+The refactored code cut -1.20sec from the 2017 analysis time and -1.32sec from the 2018 analysis time.
 
 ### Summary
 1. Refactoring code can have many advantages. By simplifying the code you make it easier to reuse, modify, or even return to (if some time passes between you and a project). By making the code more elegant and easier to read, your code becomes more welcoming to others. If you're planning on passing off your code to a partner or giving it to others to use, readability is helpful. There are risks though. Anytime you attempt to modify already working code, you risk breaking the original code. Though as long as you've saved the functional code in a separate location I don't see the risk being that great. 
